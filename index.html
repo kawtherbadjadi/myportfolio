@@ -1,100 +1,78 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Kawther Badjadi — Computer Science Student and aspiring Web Developer. Explore my projects, skills and journey.">
+        content="Kawther — Computer Science student, web developer and Growth Operating learner building digital experiences and real-world projects.">
 
     <meta name="author" content="Kawther Badjadi">
 
-    <title>Kawther Badjadi | Computer Science Student & Web Developer</title>
+    <title>Kawther — Web Developer & Growth Operating</title>
+    <link rel="icon" href="logo.jpg" type="image/jpg">
 
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="pfl.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
     <!-- ================= HEADER ================= -->
 
-    <header class="header">
+    <header class="header" id="header">
 
         <a href="#home" class="logo">
-            Kawther<span>.</span>
+            <img src="logo.jpg" alt="Kawther logo">
+            <span>Kawther<span class="dot">.</span></span>
         </a>
 
-        <nav class="navigation" id="navigation">
+        <nav class="navbar" id="navbar">
 
-            <a href="#home"
-                data-en="Home"
-                data-fr="Accueil">
+            <a href="#home" class="nav-link active" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">
                 Home
             </a>
 
-            <a href="#about"
-                data-en="About"
-                data-fr="À propos">
+            <a href="#about" class="nav-link" data-en="About" data-fr="À propos" data-ar="عني">
                 About
             </a>
 
-            <a href="#skills"
-                data-en="Skills"
-                data-fr="Compétences">
-                Skills
+            <a href="#services" class="nav-link" data-en="What I Do" data-fr="Services" data-ar="ماذا أقدم">
+                What I Do
             </a>
 
-            <a href="#services"
-                data-en="Services"
-                data-fr="Services">
-                Services
-            </a>
-
-            <a href="#projects"
-                data-en="Projects"
-                data-fr="Projets">
+            <a href="#projects" class="nav-link" data-en="Projects" data-fr="Projets" data-ar="المشاريع">
                 Projects
             </a>
 
-            <a href="#contact"
-                data-en="Contact"
-                data-fr="Contact">
+            <a href="#approach" class="nav-link" data-en="Approach" data-fr="Méthode" data-ar="منهجيتي">
+                Approach
+            </a>
+
+            <a href="#contact" class="nav-link" data-en="Contact" data-fr="Contact" data-ar="تواصل معي">
                 Contact
             </a>
 
         </nav>
 
-
         <div class="header-actions">
 
-            <button
-                class="language-btn"
-                id="languageBtn"
-                aria-label="Change language">
-                FR
+            <button class="language-btn" id="languageBtn" aria-label="Change language">
+                EN
             </button>
 
-            <button
-                class="menu-btn"
-                id="menuBtn"
-                aria-label="Open menu">
-
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
                 <i class="fa-solid fa-bars"></i>
-
             </button>
 
         </div>
@@ -102,158 +80,126 @@
     </header>
 
 
-    <!-- ================= MAIN ================= -->
-
     <main>
 
         <!-- ================= HERO ================= -->
 
-        <section class="hero" id="home">
+        <section class="hero section" id="home">
+
+            <div class="hero-bg-grid"></div>
 
             <div class="hero-content">
 
-                <p class="hero-small"
-                    data-en="Hello, I'm"
-                    data-fr="Bonjour, je suis">
-                    Hello, I'm
-                </p>
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
 
+                    <span
+                        data-en="Currently learning, building & experimenting"
+                        data-fr="Actuellement en apprentissage, création & expérimentation"
+                        data-ar="أتعلم، أبني وأجرب حاليًا">
+                        Currently learning, building & experimenting
+                    </span>
+                </div>
+
+                <p class="hero-kicker">
+                    Computer Science Student
+                    <span>•</span>
+                    Web Developer
+                    <span>•</span>
+                    Growth Operating
+                </p>
 
                 <h1>
-                    Kawther <span>Badjadi</span>
+                    I build digital experiences
+                    <span>that are made to work.</span>
                 </h1>
 
-
-                <h2
-                    data-en="Computer Science Student & Aspiring Web Developer"
-                    data-fr="Étudiante en informatique & future développeuse web">
-
-                    Computer Science Student & Aspiring Web Developer
-
-                </h2>
-
-
                 <p class="hero-description"
-                    data-en="I'm a Computer Science student passionate about technology, web development and building useful digital projects while continuously learning and growing."
-                    data-fr="Je suis étudiante en informatique, passionnée par la technologie, le développement web et la création de projets numériques utiles, tout en continuant à apprendre et à évoluer.">
-
-                    I'm a Computer Science student passionate about technology,
-                    web development and building useful digital projects while
-                    continuously learning and growing.
-
+                    data-en="I'm Kawther, a Computer Science student and web developer exploring the intersection of technology, design and growth. I learn by building real projects, testing ideas and turning them into useful digital experiences."
+                    data-fr="Je suis Kawther, étudiante en informatique et développeuse web. J'explore l'intersection entre technologie, design et growth à travers des projets réels, des tests et des expériences digitales utiles."
+                    data-ar="أنا كوثر، طالبة إعلام آلي ومطوّرة ويب. أستكشف التقاطع بين التكنولوجيا، التصميم والنمو من خلال بناء مشاريع حقيقية، اختبار الأفكار وتحويلها إلى تجارب رقمية مفيدة.">
+                    I'm Kawther, a Computer Science student and web developer exploring the intersection of technology, design and growth. I learn by building real projects, testing ideas and turning them into useful digital experiences.
                 </p>
-
 
                 <div class="hero-buttons">
 
-                    <a href="#projects" class="btn primary-btn">
-
-                        <span
-                            data-en="View My Work"
-                            data-fr="Voir mes projets">
+                    <a href="#projects" class="btn btn-primary">
+                        <span data-en="View My Work" data-fr="Voir mes projets" data-ar="شاهد مشاريعي">
                             View My Work
                         </span>
-
                         <i class="fa-solid fa-arrow-right"></i>
-
                     </a>
 
-
-                    <a href="#contact" class="btn secondary-btn">
-
-                        <span
-                            data-en="Let's Connect"
-                            data-fr="Me contacter">
-                            Let's Connect
+                    <a href="#contact" class="btn btn-secondary">
+                        <span data-en="Let's Talk" data-fr="Discutons" data-ar="لنتحدث">
+                            Let's Talk
                         </span>
-
-                        <i class="fa-regular fa-paper-plane"></i>
-
                     </a>
 
                 </div>
 
+                <!-- Signature -->
 
-                <!-- Social Media -->
+                <div class="signature">
 
-                <div class="social-icons">
+                    <span>Learn</span>
+                    <i class="fa-solid fa-arrow-right"></i>
 
-                    <a
-                        href="https://github.com/kawtherbadjadi"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="GitHub">
+                    <span>Build</span>
+                    <i class="fa-solid fa-arrow-right"></i>
 
-                        <i class="fa-brands fa-github"></i>
+                    <span>Test</span>
+                    <i class="fa-solid fa-arrow-right"></i>
 
-                    </a>
-
-
-                    <a
-                        href="https://www.linkedin.com/in/kawther-badjadi-398811305/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="LinkedIn">
-
-                        <i class="fa-brands fa-linkedin"></i>
-
-                    </a>
-
-
-                    <a
-                        href="https://www.instagram.com/dev_bykawther/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Instagram">
-
-                        <i class="fa-brands fa-instagram"></i>
-
-                    </a>
+                    <span>Grow</span>
 
                 </div>
 
             </div>
 
 
-            <!-- Decorative Code Card -->
+            <!-- Hero Visual -->
 
-            <div class="hero-decoration">
+            <div class="hero-visual">
 
-                <div class="code-card">
+                <div class="visual-glow"></div>
 
-                    <div class="code-header">
+                <div class="profile-card">
 
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="profile-image-wrapper">
+                        <img src="portfoli1.png" alt="Kawther">
+                    </div>
+
+                    <div class="profile-card-content">
+
+                        <span class="small-label">KAWTHER</span>
+
+                        <h3>
+                            Building.
+                            <br>
+                            Learning.
+                            <br>
+                            Growing.
+                        </h3>
+
+                        <div class="mini-tags">
+                            <span>Web</span>
+                            <span>UI/UX</span>
+                            <span>Growth</span>
+                        </div>
 
                     </div>
 
+                </div>
 
-                    <div class="code-content">
+                <div class="floating-card card-code">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Web Development</span>
+                </div>
 
-                        <p>
-                            <span>&lt;</span>developer<span>&gt;</span>
-                        </p>
-
-                        <p>
-                            &nbsp;&nbsp;learning<span>...</span>
-                        </p>
-
-                        <p>
-                            &nbsp;&nbsp;building<span>...</span>
-                        </p>
-
-                        <p>
-                            &nbsp;&nbsp;growing<span>...</span>
-                        </p>
-
-                        <p>
-                            <span>&lt;/</span>developer<span>&gt;</span>
-                        </p>
-
-                    </div>
-
+                <div class="floating-card card-growth">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Growth Operating</span>
                 </div>
 
             </div>
@@ -263,117 +209,138 @@
 
         <!-- ================= ABOUT ================= -->
 
-        <section class="section about" id="about">
+        <section class="about section" id="about">
 
-            <div class="section-title">
+            <div class="section-heading reveal">
 
-                <p class="section-subtitle"
-                    data-en="Get to know me"
-                    data-fr="À propos de moi">
-                    Get to know me
-                </p>
+                <span class="section-number">01</span>
 
-                <h2
-                    data-en="About Me"
-                    data-fr="À propos">
-                    About Me
-                </h2>
+                <div>
+                    <span class="section-label"
+                        data-en="A little about me"
+                        data-fr="À propos de moi"
+                        data-ar="نبذة عني">
+                        A little about me
+                    </span>
+
+                    <h2
+                        data-en="Technology is what I study. Building is how I learn."
+                        data-fr="L'informatique est ce que j'étudie. Construire est ma façon d'apprendre."
+                        data-ar="الإعلام الآلي هو ما أدرسه، والبناء هو طريقتي في التعلم.">
+                        Technology is what I study.
+                        Building is how I learn.
+                    </h2>
+                </div>
 
             </div>
 
 
-            <div class="about-container">
+            <div class="about-grid">
 
-                <div class="about-card">
-
-                    <div class="about-icon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-
-
-                    <h3
-                        data-en="Learning by Building"
-                        data-fr="Apprendre en construisant">
-                        Learning by Building
-                    </h3>
-
+                <div class="about-text reveal">
 
                     <p
-                        data-en="I'm currently studying Computer Science and developing my skills through practical projects. I believe that the best way to learn technology is to build, experiment and improve."
-                        data-fr="Je suis actuellement étudiante en informatique et je développe mes compétences à travers des projets pratiques. Je crois que la meilleure façon d'apprendre la technologie est de construire, expérimenter et progresser.">
+                        data-en="Kawther Badjadi, building my skills through real projects instead of staying only in tutorials and theory."
+                        data-fr="Kawther Badjadi, je développe mes compétences à travers des projets réels plutôt qu'en restant uniquement dans les tutoriels et la théorie."
+                        data-ar="كوثر بجادي، أطوّر مهاراتي من خلال المشاريع الحقيقية بدل الاكتفاء بالدروس النظرية والتطبيقات البسيطة.">
+                        Kawther Badjadi, building my skills through real projects instead of staying only in tutorials and theory.
+                    </p>
 
-                        I'm currently studying Computer Science and developing
-                        my skills through practical projects. I believe that
-                        the best way to learn technology is to build,
-                        experiment and improve.
+                    <p
+                        data-en="My current focus is front-end development, UI/UX and Growth Operating — understanding not only how to build a digital product, but also how it can create value, reach people and improve over time."
+                        data-fr="Je me concentre actuellement sur le développement front-end, l'UI/UX et le Growth Operating — comprendre non seulement comment construire un produit digital, mais aussi comment il peut créer de la valeur, atteindre les bonnes personnes et évoluer."
+                        data-ar="تركيزي حاليًا هو تطوير الواجهات، UI/UX وGrowth Operating — ليس فقط كيف نبني منتجًا رقميًا، بل أيضًا كيف يخلق قيمة، يصل إلى الأشخاص المناسبين ويتطور مع الوقت.">
+                        My current focus is front-end development, UI/UX and Growth Operating — understanding not only how to build a digital product, but also how it can create value, reach people and improve over time.
+                    </p>
 
+                    <p
+                        data-en="I'm still learning, and that's part of the identity of this portfolio. I don't want to pretend I know everything. I want to show what I'm building, what I'm testing and where I'm going."
+                        data-fr="Je suis encore en apprentissage, et cela fait partie de l'identité de ce portfolio. Je ne veux pas prétendre tout savoir. Je veux montrer ce que je construis, ce que je teste et où je vais."
+                        data-ar="ما زلت في مرحلة التعلم، وهذا جزء من هوية هذا الـportfolio. لا أريد أن أدّعي أنني أعرف كل شيء، بل أريد أن أُظهر ما أبنيه، ما أختبره وإلى أين أتجه.">
+                        I'm still learning, and that's part of the identity of this portfolio. I don't want to pretend I know everything. I want to show what I'm building, what I'm testing and where I'm going.
                     </p>
 
                 </div>
 
 
-                <div class="about-text">
+                <div class="about-cards reveal">
 
-                    <p
-                        data-en="I'm Kawther, a Computer Science student with a growing interest in Web Development and digital creation."
-                        data-fr="Je suis Kawther, étudiante en informatique avec un intérêt grandissant pour le développement web et la création numérique.">
+                    <div class="info-card">
 
-                        I'm Kawther, a Computer Science student with a growing
-                        interest in Web Development and digital creation.
-
-                    </p>
-
-
-                    <p
-                        data-en="I'm currently learning, building projects and documenting my journey as I grow as a developer. My goal is to turn what I learn into useful and meaningful digital experiences."
-                        data-fr="J'apprends actuellement, je construis des projets et je documente mon parcours afin d'évoluer en tant que développeuse. Mon objectif est de transformer ce que j'apprends en expériences numériques utiles et pertinentes.">
-
-                        I'm currently learning, building projects and
-                        documenting my journey as I grow as a developer.
-                        My goal is to turn what I learn into useful and
-                        meaningful digital experiences.
-
-                    </p>
-
-
-                    <div class="about-highlights">
-
-                        <div>
-
+                        <div class="card-icon">
                             <i class="fa-solid fa-graduation-cap"></i>
-
-                            <span
-                                data-en="Computer Science Student"
-                                data-fr="Étudiante en informatique">
-                                Computer Science Student
-                            </span>
-
                         </div>
 
-
                         <div>
+                            <span>01</span>
+                            <h3>CS @ USTHB</h3>
+                            <p
+                                data-en="Computer Science student building a strong technical foundation."
+                                data-fr="Étudiante en informatique qui construit une base technique solide."
+                                data-ar="طالبة إعلام آلي أبني أساسًا تقنيًا قويًا.">
+                                Computer Science student building a strong technical foundation.
+                            </p>
+                        </div>
 
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
                             <i class="fa-solid fa-laptop-code"></i>
-
-                            <span
-                                data-en="Web Development"
-                                data-fr="Développement Web">
-                                Web Development
-                            </span>
-
                         </div>
 
+                        <div>
+                            <span>02</span>
+                            <h3>Web Development</h3>
+                            <p
+                                data-en="Creating responsive, clean and useful web experiences."
+                                data-fr="Création d'expériences web responsives, propres et utiles."
+                                data-ar="إنشاء تجارب ويب متجاوبة، منظمة ومفيدة.">
+                                Creating responsive, clean and useful web experiences.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
 
                         <div>
+                            <span>03</span>
+                            <h3>Growth Operating</h3>
+                            <p
+                                data-en="Learning and applying growth systems through real projects."
+                                data-fr="Apprentissage et application de systèmes de croissance à travers des projets réels."
+                                data-ar="أتعلم وأطبق أنظمة النمو من خلال مشاريع حقيقية.">
+                                Learning and applying growth systems through real projects.
+                            </p>
+                        </div>
 
-                            <i class="fa-solid fa-rocket"></i>
+                    </div>
 
-                            <span
-                                data-en="Always Learning"
-                                data-fr="Toujours en apprentissage">
-                                Always Learning
-                            </span>
 
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+
+                        <div>
+                            <span>04</span>
+                            <h3>UI/UX & Design</h3>
+                            <p
+                                data-en="Combining structure, visual design and user experience."
+                                data-fr="Combiner structure, design visuel et expérience utilisateur."
+                                data-ar="الجمع بين الهيكلة، التصميم والتجربة."
+                                >
+                                Combining structure, visual design and user experience.
+                            </p>
                         </div>
 
                     </div>
@@ -385,151 +352,36 @@
         </section>
 
 
-        <!-- ================= SKILLS ================= -->
+        <!-- ================= CURRENTLY BUILDING ================= -->
 
-        <section class="section skills-section" id="skills">
+        <section class="currently section">
 
-            <div class="section-title">
+            <div class="currently-inner reveal">
 
-                <p class="section-subtitle"
-                    data-en="What I work with"
-                    data-fr="Mes technologies">
-                    What I work with
-                </p>
-
-                <h2
-                    data-en="Skills"
-                    data-fr="Compétences">
-                    Skills
-                </h2>
-
-            </div>
-
-
-            <div class="skills-container">
-
-                <div class="skill">
-
-                    <div class="skill-info">
-
-                        <span>HTML</span>
-
-                        <span
-                            data-en="Advanced beginner"
-                            data-fr="Débutante avancée">
-                            Advanced beginner
-                        </span>
-
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width: 80%;"></span>
-                    </div>
-
+                <div class="currently-label">
+                    <span class="live-dot"></span>
+                    <span
+                        data-en="CURRENTLY BUILDING"
+                        data-fr="EN COURS"
+                        data-ar="أعمل حاليًا على">
+                        CURRENTLY BUILDING
+                    </span>
                 </div>
 
+                <div class="currently-content">
 
-                <div class="skill">
+                    <h2>
+                        Web Development
+                        <span>+</span>
+                        Growth Operating
+                    </h2>
 
-                    <div class="skill-info">
-
-                        <span>CSS</span>
-
-                        <span
-                            data-en="Advanced beginner"
-                            data-fr="Débutante avancée">
-                            Advanced beginner
-                        </span>
-
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width: 75%;"></span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-info">
-
-                        <span>Python</span>
-
-                        <span
-                            data-en="Intermediate"
-                            data-fr="Intermédiaire">
-                            Intermediate
-                        </span>
-
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width: 65%;"></span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-info">
-
-                        <span>C</span>
-
-                        <span
-                            data-en="Intermediate"
-                            data-fr="Intermédiaire">
-                            Intermediate
-                        </span>
-
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width: 65%;"></span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-info">
-
-                        <span>JavaScript</span>
-
-                        <span
-                            data-en="Learning"
-                            data-fr="En apprentissage">
-                            Learning
-                        </span>
-
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width: 35%;"></span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-info">
-
-                        <span>Git & GitHub</span>
-
-                        <span
-                            data-en="Learning"
-                            data-fr="En apprentissage">
-                            Learning
-                        </span>
-
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width: 35%;"></span>
-                    </div>
+                    <p
+                        data-en="Building websites, exploring growth systems and turning what I learn into real digital projects."
+                        data-fr="Création de sites web, exploration des systèmes de growth et transformation de mes apprentissages en projets digitaux réels."
+                        data-ar="أبني مواقع ويب، أستكشف أنظمة النمو وأحوّل ما أتعلمه إلى مشاريع رقمية حقيقية.">
+                        Building websites, exploring growth systems and turning what I learn into real digital projects.
+                    </p>
 
                 </div>
 
@@ -540,107 +392,227 @@
 
         <!-- ================= SERVICES ================= -->
 
-        <section class="section services" id="services">
+        <section class="services section" id="services">
 
-            <div class="section-title">
+            <div class="section-heading reveal">
 
-                <p class="section-subtitle"
-                    data-en="What I can help with"
-                    data-fr="Ce que je peux proposer">
-                    What I can help with
-                </p>
+                <span class="section-number">02</span>
 
-                <h2
-                    data-en="Services"
-                    data-fr="Services">
-                    Services
-                </h2>
+                <div>
+                    <span class="section-label"
+                        data-en="What I work on"
+                        data-fr="Ce sur quoi je travaille"
+                        data-ar="ما أعمل عليه">
+                        What I work on
+                    </span>
+
+                    <h2
+                        data-en="Where technology meets ideas."
+                        data-fr="Quand la technologie rencontre les idées."
+                        data-ar="عندما تلتقي التكنولوجيا بالأفكار.">
+                        Where technology meets ideas.
+                    </h2>
+                </div>
 
             </div>
 
 
-            <div class="cards-container">
+            <div class="services-grid">
 
+                <!-- Web -->
 
-                <!-- Service 1 -->
+                <article class="service-card reveal">
 
-                <article class="service-card">
-
-                    <div class="service-icon">
+                    <div class="service-top">
+                        <span>01</span>
                         <i class="fa-solid fa-code"></i>
                     </div>
 
                     <h3
                         data-en="Web Development"
-                        data-fr="Développement Web">
+                        data-fr="Développement Web"
+                        data-ar="تطوير الويب">
                         Web Development
                     </h3>
 
                     <p
-                        data-en="Building responsive and clean websites using HTML, CSS and JavaScript while focusing on usability and modern design."
-                        data-fr="Création de sites web responsives et propres avec HTML, CSS et JavaScript, avec une attention particulière à l'utilisabilité et au design moderne.">
-
-                        Building responsive and clean websites using HTML,
-                        CSS and JavaScript while focusing on usability and
-                        modern design.
-
+                        data-en="Responsive websites, landing pages and digital interfaces built with a focus on clarity, performance and user experience."
+                        data-fr="Sites responsives, landing pages et interfaces digitales avec un focus sur la clarté, la performance et l'expérience utilisateur."
+                        data-ar="مواقع متجاوبة، صفحات هبوط وواجهات رقمية مع التركيز على الوضوح، الأداء وتجربة المستخدم.">
+                        Responsive websites, landing pages and digital interfaces built with a focus on clarity, performance and user experience.
                     </p>
 
-                </article>
-
-
-                <!-- Service 2 -->
-
-                <article class="service-card">
-
-                    <div class="service-icon">
-                        <i class="fa-solid fa-palette"></i>
+                    <div class="service-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
                     </div>
 
-                    <h3
-                        data-en="Front-End & UI"
-                        data-fr="Front-End & UI">
-                        Front-End & UI
-                    </h3>
-
-                    <p
-                        data-en="Creating simple, clear and visually appealing interfaces with a focus on responsive layouts and user experience."
-                        data-fr="Création d'interfaces simples, claires et visuellement agréables, avec un accent sur le responsive design et l'expérience utilisateur.">
-
-                        Creating simple, clear and visually appealing
-                        interfaces with a focus on responsive layouts and
-                        user experience.
-
-                    </p>
-
                 </article>
 
 
-                <!-- Service 3 -->
+                <!-- UI UX -->
 
-                <article class="service-card">
+                <article class="service-card reveal">
 
-                    <div class="service-icon">
-                        <i class="fa-solid fa-terminal"></i>
+                    <div class="service-top">
+                        <span>02</span>
+                        <i class="fa-solid fa-layer-group"></i>
                     </div>
 
-                    <h3
-                        data-en="Programming Projects"
-                        data-fr="Projets de programmation">
-                        Programming Projects
-                    </h3>
+                    <h3>UI/UX & Digital Experience</h3>
 
                     <p
-                        data-en="Developing small programming projects to solve problems, practice algorithms and turn ideas into working solutions."
-                        data-fr="Développement de petits projets de programmation pour résoudre des problèmes, pratiquer les algorithmes et transformer des idées en solutions fonctionnelles.">
-
-                        Developing small programming projects to solve
-                        problems, practice algorithms and turn ideas into
-                        working solutions.
-
+                        data-en="Designing interfaces with structure, visual hierarchy and a clear user journey — not just something that looks good."
+                        data-fr="Concevoir des interfaces avec structure, hiérarchie visuelle et parcours utilisateur clair — pas seulement quelque chose de joli."
+                        data-ar="تصميم واجهات بهيكلة واضحة، ترتيب بصري وتجربة مستخدم مدروسة — وليس مجرد تصميم جميل.">
+                        Designing interfaces with structure, visual hierarchy and a clear user journey — not just something that looks good.
                     </p>
 
+                    <div class="service-tags">
+                        <span>UI</span>
+                        <span>UX</span>
+                        <span>Canva</span>
+                    </div>
+
                 </article>
+
+
+                <!-- Growth -->
+
+                <article class="service-card growth-service reveal">
+
+                    <div class="service-top">
+                        <span>03</span>
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div class="service-highlight">
+                        GROWTH
+                    </div>
+
+                    <h3>Growth Operating</h3>
+
+                    <p
+                        data-en="Exploring how research, positioning, content, offers, user journeys and experiments can work together to create measurable growth."
+                        data-fr="Explorer comment la recherche, le positionnement, le contenu, les offres, les parcours utilisateurs et les expérimentations peuvent fonctionner ensemble pour créer de la croissance."
+                        data-ar="أستكشف كيف يمكن للبحث، التموضع، المحتوى، العروض، رحلة المستخدم والتجارب أن تعمل معًا لتحقيق نمو قابل للقياس.">
+                        Exploring how research, positioning, content, offers, user journeys and experiments can work together to create measurable growth.
+                    </p>
+
+                    <div class="service-tags">
+                        <span>Research</span>
+                        <span>Strategy</span>
+                        <span>Testing</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Digital Projects -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-top">
+                        <span>04</span>
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+
+                    <h3>Digital Projects</h3>
+
+                    <p
+                        data-en="Taking an idea from problem → structure → design → development → launch, while continuously learning and improving."
+                        data-fr="Transformer une idée de problème → structure → design → développement → lancement, avec une amélioration continue."
+                        data-ar="تحويل الفكرة من المشكلة → الهيكلة → التصميم → التطوير → الإطلاق، مع التحسين المستمر.">
+                        Taking an idea from problem → structure → design → development → launch, while continuously learning and improving.
+                    </p>
+
+                    <div class="service-tags">
+                        <span>Projects</span>
+                        <span>Strategy</span>
+                        <span>Build</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section class="skills section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">03</span>
+
+                <div>
+                    <span class="section-label">My toolkit</span>
+
+                    <h2
+                        data-en="Skills I'm building with."
+                        data-fr="Les compétences avec lesquelles je construis."
+                        data-ar="المهارات التي أبني بها.">
+                        Skills I'm building with.
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="skills-wrapper reveal">
+
+                <div class="skill-group">
+
+                    <span class="skill-group-number">01</span>
+
+                    <h3>Development</h3>
+
+                    <div class="skill-list">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                        <span>Git / GitHub</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <span class="skill-group-number">02</span>
+
+                    <h3>Design</h3>
+
+                    <div class="skill-list">
+                        <span>UI/UX</span>
+                        <span>Canva</span>
+                        <span>Visual Design</span>
+                        <span>Prototyping</span>
+                        <span>Branding</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <span class="skill-group-number">03</span>
+
+                    <h3>Growth</h3>
+
+                    <div class="skill-list">
+                        <span>Research</span>
+                        <span>Positioning</span>
+                        <span>Content</span>
+                        <span>User Journey</span>
+                        <span>Experiments</span>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -649,87 +621,79 @@
 
         <!-- ================= PROJECTS ================= -->
 
-        <section class="section projects" id="projects">
+        <section class="projects section" id="projects">
 
-            <div class="section-title">
+            <div class="section-heading reveal">
 
-                <p class="section-subtitle"
-                    data-en="Things I've built"
-                    data-fr="Mes réalisations">
-                    Things I've built
-                </p>
+                <span class="section-number">04</span>
 
-                <h2
-                    data-en="Projects"
-                    data-fr="Projets">
-                    Projects
-                </h2>
+                <div>
+                    <span class="section-label"
+                        data-en="Selected work"
+                        data-fr="Projets sélectionnés"
+                        data-ar="أعمال مختارة">
+                        Selected work
+                    </span>
+
+                    <h2
+                        data-en="Projects where I learn by doing."
+                        data-fr="Des projets où j'apprends en construisant."
+                        data-ar="مشاريع أتعلم من خلالها بالتطبيق.">
+                        Projects where I learn by doing.
+                    </h2>
+                </div>
 
             </div>
 
 
-            <div class="projects-container">
+            <div class="projects-list">
 
 
-                <!-- Hangman -->
+                <!-- PROJECT 01 -->
 
-                <article class="project-card">
+                <article class="project-card featured-project reveal">
+
+                    <div class="project-number">
+                        01
+                    </div>
 
                     <div class="project-image">
-
-                        <img
-                            src="assets/hangman.png"
-                            alt="Python Hangman project">
-
-                        <div class="project-overlay">
-
-                            <a
-                                href="https://github.com/kawtherbadjadi"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="View project on GitHub">
-
-                                <i class="fa-brands fa-github"></i>
-
-                            </a>
-
-                        </div>
-
+                    
+                        <img src="project1.png" alt="Anis Immobilier project screenshot ">
+                        
                     </div>
 
 
                     <div class="project-info">
 
-                        <span class="project-category">
-                            Python
-                        </span>
+                        <div class="project-meta">
+                            <span>CASE STUDY</span>
+                            <span>2026</span>
+                        </div>
 
-                        <h3>
-                            Python Hangman
-                        </h3>
+                        <h3>ANIS IMMOBILIER</h3>
 
                         <p
-                            data-en="A simple word guessing game built with Python while practicing functions, loops, conditions and basic game logic."
-                            data-fr="Un jeu simple de devinettes développé en Python pour pratiquer les fonctions, les boucles, les conditions et la logique de jeu.">
-
-                            A simple word guessing game built with Python
-                            while practicing functions, loops, conditions
-                            and basic game logic.
-
+                            data-en="A real-world real estate project combining website development with a broader marketing and Growth Operating case study. The goal is not only to present properties, but to think about positioning, communication and the buyer journey."
+                            data-fr="Un projet immobilier réel combinant développement web et étude de cas marketing / Growth Operating. L'objectif n'est pas seulement de présenter les biens, mais aussi de réfléchir au positionnement, à la communication et au parcours de l'acheteur."
+                            data-ar="مشروع عقاري حقيقي يجمع بين تطوير الموقع ودراسة حالة في التسويق وGrowth Operating. الهدف ليس فقط عرض العقارات، بل التفكير أيضًا في التموضع، التواصل ورحلة المشتري.">
+                            A real-world real estate project combining website development with a broader marketing and Growth Operating case study. The goal is not only to present properties, but to think about positioning, communication and the buyer journey.
                         </p>
 
 
-                        <div class="project-links">
+                        <div class="project-tags">
 
-                            <a
-                                href="https://github.com/kawtherbadjadi"
-                                target="_blank"
-                                rel="noopener noreferrer">
+                            <span>Web Development</span>
+                            <span>Real Estate</span>
+                            <span>Growth Case Study</span>
 
-                                GitHub
+                        </div>
 
+                        <div class="project-actions">
+
+                            <a href="https://anis-badjadi-promotions-immobilieres.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                View Case Study
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
                             </a>
 
                         </div>
@@ -739,28 +703,19 @@
                 </article>
 
 
-                <!-- Slot Machine -->
+                <!-- PROJECT 02 -->
 
-                <article class="project-card">
+                <article class="project-card reveal">
+
+                    <div class="project-number">
+                        02
+                    </div>
 
                     <div class="project-image">
 
-                        <img
-                            src="assets/slot-machine.png"
-                            alt="Python Slot Machine project">
-
-                        <div class="project-overlay">
-
-                            <a
-                                href="https://github.com/kawtherbadjadi"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="View project on GitHub">
-
-                                <i class="fa-brands fa-github"></i>
-
-                            </a>
-
+                        <div class="project-placeholder portfolio-project">
+                            <i class="fa-solid fa-user"></i>
+                            <span>PERSONAL PORTFOLIO</span>
                         </div>
 
                     </div>
@@ -768,38 +723,25 @@
 
                     <div class="project-info">
 
-                        <span class="project-category">
-                            Python
-                        </span>
+                        <div class="project-meta">
+                            <span>PERSONAL PROJECT</span>
+                            <span>2026</span>
+                        </div>
 
-                        <h3>
-                            Slot Machine
-                        </h3>
+                        <h3>My Digital Portfolio</h3>
 
                         <p
-                            data-en="A console-based Python project created to practice functions, loops, conditions, random values and program logic."
-                            data-fr="Un projet Python en console créé pour pratiquer les fonctions, les boucles, les conditions, les valeurs aléatoires et la logique de programmation.">
-
-                            A console-based Python project created to
-                            practice functions, loops, conditions,
-                            random values and program logic.
-
+                            data-en="A personal digital space designed to document my journey across Computer Science, web development, design and Growth Operating."
+                            data-fr="Un espace digital personnel pour documenter mon parcours en informatique, développement web, design et Growth Operating."
+                            data-ar="مساحة رقمية شخصية توثق رحلتي في الإعلام الآلي، تطوير الويب، التصميم وGrowth Operating.">
+                            A personal digital space designed to document my journey across Computer Science, web development, design and Growth Operating.
                         </p>
 
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://github.com/kawtherbadjadi"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                GitHub
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                            </a>
-
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>UI/UX</span>
                         </div>
 
                     </div>
@@ -807,28 +749,19 @@
                 </article>
 
 
-                <!-- Portfolio -->
+                <!-- PROJECT 03 -->
 
-                <article class="project-card">
+                <article class="project-card reveal">
+
+                    <div class="project-number">
+                        03
+                    </div>
 
                     <div class="project-image">
 
-                        <img
-                            src="assets/portfolio.png"
-                            alt="Personal portfolio website">
-
-                        <div class="project-overlay">
-
-                            <a
-                                href="https://github.com/kawtherbadjadi"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="View portfolio on GitHub">
-
-                                <i class="fa-brands fa-github"></i>
-
-                            </a>
-
+                        <div class="project-placeholder toolkit-project">
+                            <i class="fa-solid fa-toolbox"></i>
+                            <span>TOOLKIT</span>
                         </div>
 
                     </div>
@@ -836,65 +769,25 @@
 
                     <div class="project-info">
 
-                        <span class="project-category">
-                            HTML • CSS • JavaScript
-                        </span>
-
-                        <h3>
-                            Personal Portfolio
-                        </h3>
-
-                        <p
-                            data-en="A responsive personal portfolio designed to present my skills, projects and development journey."
-                            data-fr="Un portfolio personnel responsive conçu pour présenter mes compétences, mes projets et mon parcours de développement.">
-
-                            A responsive personal portfolio designed to
-                            present my skills, projects and development journey.
-
-                        </p>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://github.com/kawtherbadjadi"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                GitHub
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                            </a>
-
+                        <div class="project-meta">
+                            <span>STUDENT PROJECT</span>
+                            <span>2026</span>
                         </div>
 
-                    </div>
-
-                </article>
-
-
-                <!-- Future Project -->
-
-                <article class="project-card coming-soon">
-
-                    <div class="coming-soon-content">
-
-                        <i class="fa-solid fa-plus"></i>
-
-                        <h3
-                            data-en="More Projects Coming Soon"
-                            data-fr="D'autres projets bientôt">
-                            More Projects Coming Soon
-                        </h3>
+                        <h3>Toolkit</h3>
 
                         <p
-                            data-en="This space is reserved for the next project I build."
-                            data-fr="Cet espace est réservé à mon prochain projet.">
-
-                            This space is reserved for the next project I build.
-
+                            data-en="A student-focused resource project gathering useful learning materials, references and organization tools for Computer Science students."
+                            data-fr="Un projet destiné aux étudiants regroupant des ressources d'apprentissage, références et outils d'organisation pour les étudiants en informatique."
+                            data-ar="مشروع موجه للطلبة يجمع مصادر التعلم، المراجع وأدوات التنظيم المفيدة لطلبة الإعلام الآلي.">
+                            A student-focused resource project gathering useful learning materials, references and organization tools for Computer Science students.
                         </p>
+
+                        <div class="project-tags">
+                            <span>Research</span>
+                            <span>Organization</span>
+                            <span>Digital Project</span>
+                        </div>
 
                     </div>
 
@@ -905,126 +798,210 @@
         </section>
 
 
-        <!-- ================= CONTACT ================= -->
+        <!-- ================= APPROACH ================= -->
 
-        <section class="section contact" id="contact">
+        <section class="approach section" id="approach">
 
-            <div class="section-title">
+            <div class="section-heading reveal">
 
-                <p class="section-subtitle"
-                    data-en="Have a project or just want to connect?"
-                    data-fr="Un projet ou simplement envie d'échanger ?">
+                <span class="section-number">05</span>
 
-                    Have a project or just want to connect?
+                <div>
+                    <span class="section-label"
+                        data-en="My signature"
+                        data-fr="Ma signature"
+                        data-ar="بصمتي">
+                        My signature
+                    </span>
 
-                </p>
-
-                <h2
-                    data-en="Let's Connect"
-                    data-fr="Me contacter">
-
-                    Let's Connect
-
-                </h2>
+                    <h2
+                        data-en="Learn. Build. Test. Grow."
+                        data-fr="Apprendre. Construire. Tester. Grandir."
+                        data-ar="تعلّم. ابنِ. اختبر. تطوّر.">
+                        Learn. Build. Test. Grow.
+                    </h2>
+                </div>
 
             </div>
 
 
-            <div class="contact-container">
+            <div class="approach-intro reveal">
+
+                <p
+                    data-en="This is how I like to approach digital projects. I don't believe in waiting until everything is perfect before building."
+                    data-fr="C'est ainsi que j'aime aborder les projets digitaux. Je ne crois pas qu'il faille attendre que tout soit parfait avant de construire."
+                    data-ar="هذه هي الطريقة التي أحب أن أتعامل بها مع المشاريع الرقمية. لا أؤمن بانتظار الكمال قبل البدء في البناء.">
+                    This is how I like to approach digital projects. I don't believe in waiting until everything is perfect before building.
+                </p>
+
+            </div>
 
 
-                <!-- GitHub -->
+            <div class="approach-grid">
 
-                <div class="contact-card">
+                <div class="approach-step reveal">
 
-                    <div class="contact-icon">
+                    <span>01</span>
+
+                    <div class="step-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <h3>Learn</h3>
+
+                    <p
+                        data-en="Understand the problem, the people and the context before jumping into solutions."
+                        data-fr="Comprendre le problème, les personnes et le contexte avant de chercher une solution."
+                        data-ar="فهم المشكلة، الأشخاص والسياق قبل القفز إلى الحلول.">
+                        Understand the problem, the people and the context before jumping into solutions.
+                    </p>
+
+                </div>
+
+
+                <div class="approach-step reveal">
+
+                    <span>02</span>
+
+                    <div class="step-icon">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+
+                    <h3>Build</h3>
+
+                    <p
+                        data-en="Turn the idea into something real that people can actually see and use."
+                        data-fr="Transformer l'idée en quelque chose de réel que les gens peuvent voir et utiliser."
+                        data-ar="تحويل الفكرة إلى شيء حقيقي يمكن للناس رؤيته واستخدامه.">
+                        Turn the idea into something real that people can actually see and use.
+                    </p>
+
+                </div>
+
+
+                <div class="approach-step reveal">
+
+                    <span>03</span>
+
+                    <div class="step-icon">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+
+                    <h3>Test</h3>
+
+                    <p
+                        data-en="Observe what works, what doesn't and what needs to change."
+                        data-fr="Observer ce qui fonctionne, ce qui ne fonctionne pas et ce qui doit changer."
+                        data-ar="ملاحظة ما يعمل، وما لا يعمل، وما يحتاج إلى تغيير.">
+                        Observe what works, what doesn't and what needs to change.
+                    </p>
+
+                </div>
+
+
+                <div class="approach-step reveal">
+
+                    <span>04</span>
+
+                    <div class="step-icon">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+
+                    <h3>Grow</h3>
+
+                    <p
+                        data-en="Improve the system, create value and turn useful lessons into better results."
+                        data-fr="Améliorer le système, créer de la valeur et transformer les apprentissages en meilleurs résultats."
+                        data-ar="تحسين النظام، خلق القيمة وتحويل ما نتعلمه إلى نتائج أفضل.">
+                        Improve the system, create value and turn useful lessons into better results.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact section" id="contact">
+
+            <div class="contact-box reveal">
+
+                <div class="contact-content">
+
+                    <span class="section-label"
+                        data-en="Have a project in mind?"
+                        data-fr="Vous avez un projet en tête ?"
+                        data-ar="لديك مشروع في ذهنك؟">
+                        Have a project in mind?
+                    </span>
+
+                    <h2
+                        data-en="Let's build something useful."
+                        data-fr="Construisons quelque chose d'utile."
+                        data-ar="لنبنِ شيئًا مفيدًا.">
+                        Let's build something useful.
+                    </h2>
+
+                    <p
+                        data-en="Whether it's a website, a digital project or a growth challenge, I'm always interested in meaningful projects where I can learn, build and create value."
+                        data-fr="Qu'il s'agisse d'un site web, d'un projet digital ou d'un challenge growth, je suis intéressée par les projets qui permettent d'apprendre, construire et créer de la valeur."
+                        data-ar="سواء كان موقع ويب، مشروعًا رقميًا أو تحديًا في النمو، أهتم بالمشاريع التي تسمح لي بالتعلم، البناء وخلق القيمة.">
+                        Whether it's a website, a digital project or a growth challenge, I'm always interested in meaningful projects where I can learn, build and create value.
+                    </p>
+
+                    <a href="mailto:your@email.com" class="btn btn-primary">
+                        Start a Conversation
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="contact-side">
+
+                    <div class="contact-item">
+
                         <i class="fa-brands fa-github"></i>
+
+                        <div>
+                            <span>GitHub</span>
+                            <a href="https://github.com/kawtherbadjadi" target="_blank">
+                                @kawtherbadjadi
+                            </a>
+                        </div>
+
                     </div>
 
-                    <h3>
-                        GitHub
-                    </h3>
 
-                    <p
-                        data-en="Explore my projects and coding journey."
-                        data-fr="Découvrez mes projets et mon parcours de programmation.">
+                    <div class="contact-item">
 
-                        Explore my projects and coding journey.
-
-                    </p>
-
-                    <a
-                        href="https://github.com/kawtherbadjadi"
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        @kawtherbadjadi
-
-                    </a>
-
-                </div>
-
-
-                <!-- LinkedIn -->
-
-                <div class="contact-card">
-
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div>
-
-                    <h3>
-                        LinkedIn
-                    </h3>
-
-                    <p
-                        data-en="Let's connect professionally."
-                        data-fr="Connectons-nous professionnellement.">
-
-                        Let's connect professionally.
-
-                    </p>
-
-                    <a
-                        href="https://www.linkedin.com/in/kawther-badjadi-398811305/"
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        LinkedIn Profile
-
-                    </a>
-
-                </div>
-
-
-                <!-- Instagram -->
-
-                <div class="contact-card">
-
-                    <div class="contact-icon">
                         <i class="fa-brands fa-instagram"></i>
+
+                        <div>
+                            <span>Instagram</span>
+                            <a href="https://instagram.com/dev_bykawther" target="_blank">
+                                @dev_bykawther
+                            </a>
+                        </div>
+
                     </div>
 
-                    <h3>
-                        Instagram
-                    </h3>
 
-                    <p
-                        data-en="Follow my learning and content journey."
-                        data-fr="Suivez mon parcours d'apprentissage et de création de contenu.">
+                    <div class="contact-item">
 
-                        Follow my learning and content journey.
+                        <i class="fa-brands fa-linkedin-in"></i>
 
-                    </p>
+                        <div>
+                            <span>LinkedIn</span>
+                            <a href="https://linkedin.com/in/kawtherbadjadi" target="_blank">
+                                Connect with me
+                            </a>
+                        </div>
 
-                    <a
-                        href="https://www.instagram.com/dev_bykawther/"
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        @dev_bykawther
-
-                    </a>
+                    </div>
 
                 </div>
 
@@ -1039,68 +1016,34 @@
 
     <footer class="footer">
 
-        <div>
-
-            <p>
-                © 2026
-                <strong>Kawther Badjadi</strong>.
-            </p>
-
-            <p
-                class="footer-note"
-                data-en="Learning • Building • Growing"
-                data-fr="Apprendre • Construire • Évoluer">
-
-                Learning • Building • Growing
-
-            </p>
-
+        <div class="footer-logo">
+            Kawther<span>.</span>
         </div>
 
+        <p>
+            Learn.
+            <span>Build.</span>
+            Test.
+            <span>Grow.</span>
+        </p>
 
-        <div class="footer-socials">
+        <div class="footer-line"></div>
 
-            <a
-                href="https://github.com/kawtherbadjadi"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub">
-
-                <i class="fa-brands fa-github"></i>
-
-            </a>
-
-
-            <a
-                href="https://www.linkedin.com/in/kawther-badjadi-398811305/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn">
-
-                <i class="fa-brands fa-linkedin"></i>
-
-            </a>
-
-
-            <a
-                href="https://www.instagram.com/dev_bykawther/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram">
-
-                <i class="fa-brands fa-instagram"></i>
-
-            </a>
-
-        </div>
+        <small>
+            © 2026 Kawther Badjadi. Built with curiosity & code.
+        </small>
 
     </footer>
 
 
-    <!-- JavaScript -->
+    <!-- BACK TO TOP -->
 
-    <script src="pfl.js"></script>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script.js"></script>
 
 </body>
-
 </html>
